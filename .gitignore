@@ -1,0 +1,22 @@
+# Editors / OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+
+# Node
+node_modules/
+.pnpm-store/
+dist/
+build/
+
+# PHP/Laravel
+vendor/
+.env
+.env.*
+storage/*
+bootstrap/cache/
+
+# Misc
+tmp/
