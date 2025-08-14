@@ -18,3 +18,11 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+use App\Http\Controllers\UpdateController;
+
+Route::middleware(["auth","admin"])->group(function () {
+    Route::get("/admin/update", [UpdateController::class, "page"])->name("admin.update");
+    Route::post("/admin/update/run", [UpdateController::class, "run"])->name("admin.update.run");
+});

@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+/storage/*.log
+/storage/logs/
+/bootstrap/cache/*.php
